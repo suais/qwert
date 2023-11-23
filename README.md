@@ -18,7 +18,7 @@ qwert
 (qwert) root@hgodeMac:/Users/hgo# ? 你好                                                                                                                                        
 你好！有什么我可以帮助你的吗？
 ```
-
+# 配置文件
 默认情况下，qwert免费提供了ChatGPT3.5的api，不限制使用次数(Warp免费账户每日限制100条的AI功能)，不过目前还不能提供稳定的连接，如果您有可用的openai key可以自定义在配置文件中修改：
 
 在Linux或Mac中：
@@ -26,7 +26,7 @@ qwert
 sudo vim /usr/local/share/qwert/config.ini
 ```
 
-将 type = local 替换为remote
+将 type = remote 修改为 type = local
    key = <this is your api key>
 替换为你自己的key即可
 如遇网络错误，则会产生`network error`，您只需重试命令即可。
